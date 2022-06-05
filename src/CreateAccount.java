@@ -3,5 +3,8 @@ public class CreateAccount {
         CheckingAccount firstAccount = new CheckingAccount();
         firstAccount.balance = 200;
         System.out.println(firstAccount.balance);
+
+        firstAccount.balance += 200;
+        System.out.println(firstAccount.balance);
     }
 }
