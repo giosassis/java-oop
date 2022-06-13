@@ -13,9 +13,6 @@ public class CheckingAccount {
         if(this.balance >= value) { 
             this.balance -= value;
             return true;
-        } else {
-            return false;
-        }
     }
 
     public boolean transferMoney(double value, CheckingAccount destiny ) {
@@ -23,8 +20,6 @@ public class CheckingAccount {
             this.balance -= value;
             destiny.deposit(value);
             return true;
-        } else {
-            return false;
         }
     }
 }
